@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html laang="en">
+<html lang="en">
     <head>
         <title>Pizza</title>
         <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
         <meta content="width=device-width,initial-scale=1.0" name="viewport">
         <style>#menuBG{width:400px;height:470px;margin:10px auto;}
-        #frmMenu{width:400px;height:200px;} 
-        #totalPrice{width:200px;height:190px;margin:0 auto;float:right;}.left{width:200px;height:200px;float:left;} .right{width:200px;height:200px;float:right;}
+        #frmMenu{width:600px;height:200px;} 
+        #totalPrice{width:200px;height:190px;margin:0 auto;float:right;}
+        .left{width:200px;height:200px;float:left;} 
+        .right{width:200px;height:200px;float:right;}
         #showText{width:200px;height:190px;margin:0px auto;float:left;} 
-        #cart{top:0;margin:0px auto;width:400px;height:200px;}#btnOrder{margin:10px 0px 0px 100px;width:100px;height:40px} 
-        </style>
+        #cart{top:0;margin:0px auto;width:400px;height:200px;}
+        #btnOrder{margin:10px 0px 0px 100px;width:100px;height:40px} 
+        h3{margin-bottom:4px;margin-top:20px;}
+        </style>   
     </head>
     <body>
         <div id="menuBG">
@@ -54,9 +58,16 @@
                 </div>
                 <div class="menu left">
                     <h3>Cheese:</h3>
+                    <input class="cheese" type="radio" name="Cheese" value="Light"> Light Cheese<br>
+                    <input class="cheese" type="radio" name="Cheese" value="Regular" checked> Regular<br>
+                    <input class="cheese" type="radio" name="Cheese" value="Extra"> Extra Cheese<br>
                 </div>
                 <div class="menu right">
                     <h3>Sauce:</h3>
+                    <input class="sauce" type="radio" name="Sauce" value="None"> No Sauce<br>
+                    <input class="sauce" type="radio" name="Sauce" value="Marinara" checked> Marinara<br>
+                    <input class="sauce" type="radio" name="Sauce" value="White"> White Sauce<br>
+                    <input class="sauce" type="radio" name="Sauce" value="BBQ"> Barbecue<br>
                 </div>
                 <div id="cart">
                     <div id="showText"></div>
